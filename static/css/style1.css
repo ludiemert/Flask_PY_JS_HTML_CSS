@@ -1,0 +1,168 @@
+/* Estilo global para a página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Estilo para o logo */
+.logo {
+  width: 30%;  /* Defina o tamanho pequeno que deseja para o logo */
+  height: auto;  /* Mantém a proporção original da imagem */
+  display: block;
+  margin: 0 auto 20px;  /* Centraliza o logo e adiciona margem inferior */
+}
+
+.response-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  margin-top: 30px;
+}
+
+.response-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-size: 28px;
+}
+
+.response-container p {
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+/* Botão de Voltar */
+.button-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-voltar:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  border: 2px solid red;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  border: 2px solid green;
+  padding: 10px;
+  background-color: #e6ffe6;
+  border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .response-container {
+    width: 90%;
+  }
+
+  .response-container h1, .response-container p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .response-container h1, .response-container p {
+    font-size: 18px;
+  }
+}
+
+/* teste de responsividade */
+/* Extra Small (XS) - Menores que 576px */
+@media (max-width: 575px) {
+  body {
+    background-color: lightblue;
+  }
+  /* Outros estilos específicos para telas pequenas */
+}
+
+/* Small (SM) - 576px ou maior */
+@media (min-width: 576px) {
+  body {
+    background-color: lightgreen;
+  }
+  /* Outros estilos específicos para dispositivos móveis maiores */
+}
+
+/* Medium (MD) - 768px ou maior */
+@media (min-width: 768px) {
+  body {
+    background-color: lightyellow;
+  }
+  /* Outros estilos específicos para tablets */
+}
+
+/* Large (LG) - 992px ou maior */
+@media (min-width: 992px) {
+  body {
+    background-color: lightcoral;
+  }
+  /* Estilos para dispositivos maiores como laptops */
+}
+
+/* Extra Large (XL) - 1200px ou maior */
+@media (min-width: 1200px) {
+  body {
+    background-color: #d3d3d2;
+  }
+  /* Estilos para desktops e telas grandes */
+}
+
+/* Extra Extra Large (XXL) - 1400px ou maior */
+@media (min-width: 1400px) {
+  body {
+    background-color: #d3d3d3;
+  }
+  /* Estilos para telas ultra grandes */
+}
+
+
+/* Responsividade: ajustando o tamanho para telas menores */
+@media (max-width: 768px) {
+  .logo {
+    width: 40px;  /* Reduz o tamanho para telas menores */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .logo {
+    width: 30px;  /* Reduz ainda mais o tamanho para telas muito pequenas */
+  }
+}

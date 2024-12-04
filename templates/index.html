@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page with Flask</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+       <!-- Adicionando a imagem do logo -->
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo">
+
+      <h1 class="title">My Page with Flask, welcomeee!!!</h1>
+      <p class="subtitle">This is a simple page integrating Python, Flask, JavaScript, HTML and CSS.</p>
+
+      <div class="form-container">
+        <form action="/processar" method="post" class="form">
+          <label for="nome" class="label">Your name 🧐 </label>
+          <input type="text" id="nome" name="nome" class="input">
+
+          <!-- Exibe a mensagem de erro aqui, se houver -->
+          {% if error %}
+            <p style="color: red;">{{ error }}</p>
+          {% endif %}
+
+           <label for="telefone" class="label">Phone (optional) ☎ </label>
+          <input type="tel" id="telefone" name="telefone" class="input" placeholder="Ex: +55 (99) 99999-9999">
+
+          <label for="email" class="label">Email (optional) 📩 </label>
+          <input type="email" id="email" name="email" class="input" placeholder="Ex: email@dominio.com">
+
+          <button type="submit" class="button">Send  </button>
+
+        </form>
+
+        <form action="/upload" method="post" enctype="multipart/form-data" class="form">
+          <label for="arquivo" class="label">Choose a file 🧐💻</label>
+          <input type="file" id="arquivo" name="arquivo" class="input-file">
+          <button type="submit" class="button">Send file</button>
+        </form>
+      </div>
+
+      <button id="botao-mudar-cor">Change background color 🥳</button>
+    </div>
+  </header>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Resposta</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+</head>
+<body>
+  <header>
+    <div class="response-container">
+
+       <!-- Adicionando a imagem do logo -->
+      <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo">
+
+      <!-- Renderiza a mensagem com classe condicional -->
+       <h1 class="{{ 'error' if 'No file selected' in mensagem or 'File type not permitted' in mensagem else 'success' }}">{{ mensagem }}</h1>
+
+      <!-- Botão de Voltar -->
+      <a href="/" class="button-voltar">Back to homepage</a>
+    </div>
+  </header>
+</body>
+</html>

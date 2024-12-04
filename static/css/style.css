@@ -1,0 +1,319 @@
+/* Estiliza o body para garantir que ocupe toda a altura da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+  padding: 20px; /* Espaçamento em torno do conteúdo */
+  padding-top: 30px; /* Adiciona 30px de distância no topo */
+  padding-bottom: 30px; /* Adiciona 30px de distância no fundo */
+  display: flex; /* Ativa o Flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+  margin: 0; /* Remove a margem padrão */
+  font-size: 28px; /* Aumenta o tamanho do texto */
+}
+
+/* Define um tamanho maior para o formulário */
+form {
+    width: 100%; /* Ajusta para 100% da largura disponível */
+    max-width: 600px; /* Define um tamanho máximo */
+    margin: 0 auto; /* Centraliza o formulário na página */
+    padding: 20px; /* Espaçamento interno para o formulário */
+    border: 2px solid #ccc; /* Borda para destacar o formulário */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    margin-bottom: 30px; /* Adiciona 30px de distância abaixo do formulário */
+}
+/* Estilo para o logo */
+.logo {
+  width: 20%;  /* Defina o tamanho pequeno que deseja para o logo */
+  height: auto;  /* Mantém a proporção original da imagem */
+  display: block;
+  margin: 0 auto 20px;  /* Centraliza o logo e adiciona margem inferior */
+}
+
+/* Ajusta o rótulo (label) */
+label {
+    display: block;
+    margin-bottom: 10px; /* Espaçamento entre o rótulo e o campo de entrada */
+    font-size: 32px; /* Aumenta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+/* Estiliza o campo de entrada */
+input[type="text"] {
+    width: 100%; /* Campo ocupa toda a largura do formulário */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 26px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 20px; /* Espaçamento abaixo do campo */
+    box-sizing: border-box; /* Inclui borda e preenchimento na largura */
+}
+
+/* Estiliza o botão */
+button {
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 26px; /* Tamanho da fonte */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Pagina web resposta */
+/* Estiliza o container da resposta */
+.response-container {
+  text-align: center;
+  background-color: #fff; /* Fundo branco */
+  padding: 30px;
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  max-width: 500px;
+  width: 100%; /* Ajusta para 100% da largura disponível */
+  display: flex; /* Ativa o Flexbox dentro da resposta */
+  flex-direction: column; /* Garante que o conteúdo seja empilhado */
+  justify-content: center; /* Centraliza o conteúdo dentro do container */
+  align-items: center; /* Centraliza horizontalmente */
+  min-height: 200px; /* Garante que o container tenha uma altura mínima */
+  margin-top: 30px; /* Adiciona 30px de distância acima do container */
+}
+
+/* Estiliza o título */
+.response-container h1 {
+  font-size: 32px; /* Tamanho maior para o título */
+  margin-bottom: 20px;
+  color: #007bff; /* Cor do título */
+  font-size: 30px; /* Aumenta o tamanho do texto */
+}
+
+/* Estiliza o parágrafo */
+.response-container p {
+  line-height: 1.6; /* Melhora a leitura */
+  font-size: 30px; /* Aumenta o tamanho do texto */
+  font-weight: bold;
+
+}
+
+/* botao voltar / */
+
+.button-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 26px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-voltar:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  border: 2px solid red;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border-radius: 5px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  border: 2px solid green;
+  padding: 10px;
+  background-color: #e6ffe6;
+  border-radius: 5px;
+}
+
+/* Estiliza o input de arquivo para aumentar o tamanho */
+input[type="file"] {
+  font-size: 24px; /* Aumenta o tamanho da fonte */
+  padding: 15px; /* Aumenta o preenchimento para aumentar a área clicável */
+  border-radius: 5px; /* Bordas arredondadas */
+  border: 2px solid #ccc; /* Borda */
+}
+
+/* Estiliza o texto de "No file chosen" */
+input[type="file"]::-webkit-file-upload-button {
+  font-size: 20px; /* Aumenta o tamanho do botão de upload */
+  padding: 10px 20px; /* Aumenta o preenchimento do botão */
+  background-color: #007bff; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Indica que é clicável */
+}
+
+/* Estilo para o texto de "Nenhum arquivo selecionado" */
+input[type="file"]:lang(pt)::-webkit-file-upload-button {
+  font-size: 24px; /* Aumenta o tamanho do texto ao lado do botão */
+  color: #333; /* Cor do texto */
+}
+
+/* Estiliza o botão de mudar cor */
+#botao-mudar-cor {
+    padding: 40px 60px; /* Tamanho maior para o botão */
+     margin-top: 30px;
+    font-size: 26px; /* Tamanho da fonte */
+    background-color: #007bff; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Torna o botão redondo */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Animação suave */
+    position: relative; /* Necessário para o "bottom" funcionar */
+    bottom: 30px; /* Ajusta a distância do botão do final da página */
+}
+
+/* Efeito hover no botão */
+#botao-mudar-cor:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo básico para os inputs */
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não ultrapasse a largura do input */
+  font-size: 16px;
+}
+
+/* Personalizando o texto do placeholder */
+.input::placeholder {
+  font-size: 18px;  /* Aumenta o tamanho da fonte dentro do placeholder */
+  color: #888; /* Cor do texto do placeholder */
+  font-style: italic; /* Torna o texto do placeholder em itálico (opcional) */
+}
+
+
+.input-file {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.button {
+  padding: 10px 15px;
+  margin-top: 15px; /* Adiciona 15px de espaço abaixo de cada botão */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.input:focus, .input-file:focus {
+  border-color: #007bff;  /* Muda a cor da borda quando o campo é focado */
+  outline: none;  /* Remove o contorno padrão do browser */
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  form, .response-container {
+    width: 90%; /* Ajusta para telas menores */
+  }
+
+  label, input, button {
+    font-size: 22px; /* Ajusta o tamanho da fonte */
+  }
+}
+
+@media (max-width: 480px) {
+  label, input, button {
+    font-size: 18px; /* Ajusta ainda mais em telas pequenas */
+  }
+}
+
+
+/* teste de responsividade */
+/* Extra Small (XS) - Menores que 576px */
+@media (max-width: 575px) {
+  body {
+    background-color: lightblue;
+  }
+  /* Outros estilos específicos para telas pequenas */
+}
+
+/* Small (SM) - 576px ou maior */
+@media (min-width: 576px) {
+  body {
+    background-color: lightgreen;
+  }
+  /* Outros estilos específicos para dispositivos móveis maiores */
+}
+
+/* Medium (MD) - 768px ou maior */
+@media (min-width: 768px) {
+  body {
+    background-color: lightyellow;
+  }
+  /* Outros estilos específicos para tablets */
+}
+
+/* Large (LG) - 992px ou maior */
+@media (min-width: 992px) {
+  body {
+    background-color: lightcoral;
+  }
+  /* Estilos para dispositivos maiores como laptops */
+}
+
+/* Extra Large (XL) - 1200px ou maior */
+@media (min-width: 1200px) {
+  body {
+    background-color: #d3d3d2;
+  }
+  /* Estilos para desktops e telas grandes */
+}
+
+/* Extra Extra Large (XXL) - 1400px ou maior */
+@media (min-width: 1400px) {
+  body {
+    background-color: #d3d3d3;
+  }
+  /* Estilos para telas ultra grandes */
+}
+
+
+/* Responsividade: ajustando o tamanho para telas menores */
+@media (max-width: 768px) {
+  .logo {
+    width: 40px;  /* Reduz o tamanho para telas menores */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .logo {
+    width: 30px;  /* Reduz ainda mais o tamanho para telas muito pequenas */
+  }
+}
