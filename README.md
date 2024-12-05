@@ -2,6 +2,83 @@
  - Web Integration Project with Flask, HTML, CSS, and JavaScript
  - This project integrates Flask (Python) with HTML, CSS, and JavaScript to create a functional and interactive web application. The app allows users to submit a form with personal information and upload files. The project demonstrates how to create interactive forms, process data, and use Flask for routing and dynamic templating.
 
+---
+
+<h4 align="center">Web - Flask_PY_JS_HTML_CSS 🚀</h4>
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/01_Flask_PY_JS_HTML_CSS_app.py.png" style="width: 90%;" alt="01_Flask_PY_JS_HTML_CSS_app.py">
+                <p style="margin-top: 5px;">Flask_PY_JS_HTML_CSS_app.py</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/01_Project_page_Codig.png" style="width: 90%;" alt=01_Project_page_Codig">
+                <p style="margin-top: 5px;">Project_page_Codig</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+
+<div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/5_name_pag_route_proc.png" style="width: 90%;" alt="5_name_pag_route_proc">
+                <p style="margin-top: 5px;">Name_pag_route_proc</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/6_pag_upload.png" style="width: 90%;" alt=6_pag_upload.">
+                <p style="margin-top: 5px;">Page_upload</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+  <div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/02_Flask_PY_JS_HTML_CSS_app.py.png" style="width: 90%;" alt="02_Flask_PY_JS_HTML_CSS_app.py">
+                <p style="margin-top: 5px;">Color_Flask_PY_JS_HTML_CSS_app.py</p>
+            </td>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/4_teste_name_erro.png" style="width: 90%;" alt=4_teste_name_erro">
+                <p style="margin-top: 5px;">Teste_name_erro</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+
+  <div align="center">
+    <table>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="img/7_pag_ok_upload.png" style="width: 90%;" alt="7_pag_ok_upload">
+                <p style="margin-top: 5px;">Page_ok_upload</p>
+            </td>          
+        </tr>
+    </table>
+</div>
+
+  <br/>
+  <br/>
+  
+---
+
+
+
 #### Features
  - Interactive Form: Users can fill out a form with name, phone number, and email.
  - File Upload: Users can upload files with allowed types such as images and text files.
